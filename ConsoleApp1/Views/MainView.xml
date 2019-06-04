@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<view width="330" height="280">
+
+  <control progid="DecalControls.FixedLayout" name="Wrapper">
+
+    <control progid="DecalControls.PushButton"  name="Die"            height="40" text="DIE" />
+    <control progid="DecalControls.PushButton"  name="IgnoreVP"       height="40" text="VP" />
+    <control progid="DecalControls.PushButton"  name="Fixbusy"        height="40" text="FIX" />
+    <control progid="DecalControls.PushButton"  name="Loc"            height="40" text="HELP" />
+    <control progid="DecalControls.StaticText"  name="ModeLbl"        height="20" text="Mode: " />
+    <control progid="DecalControls.Choice"      name="Modes"          left="200"   width="110" height="25" />
+
+    <control progid="DecalControls.PushButton"  name="Imperil"        height="20" text="Imp" />
+    <control progid="DecalControls.PushButton"  name="Bludge"         height="20" text="Bludge" />
+    <control progid="DecalControls.PushButton"  name="Pierce"         height="20" text="Pierce" />
+    <control progid="DecalControls.PushButton"  name="Slash"          height="20" text="Slash" />
+    <control progid="DecalControls.PushButton"  name="Light"          height="20" text="Light" />
+    <control progid="DecalControls.PushButton"  name="Acid"           height="20" text="Acid" />
+    <control progid="DecalControls.PushButton"  name="Fire"           height="20" text="Fire" />
+    <control progid="DecalControls.PushButton"  name="Cold"           height="20" text="Cold" />
+    <control progid="DecalControls.PushButton"  name="Tag"            height="40" text="TAG!" />
+
+    <control progid="DecalControls.PushButton"  name="Stam"           height="20"  text="Stam!"/>
+    <control progid="DecalControls.PushButton"  name="Harm"           height="20"  text="Harm!"/>
+
+    <control progid="DecalControls.StaticText"  name="VersusNote"     height="20" text="versus" />
+    <control progid="DecalControls.StaticText"  name="EnemyNote"      height="20" />
+    <control progid="DecalControls.StaticText"  name="GuildNote"      height="20" />
+
+    <control progid="DecalControls.PushButton"  name="Strength"       height="20" />
+    <control progid="DecalControls.PushButton"  name="Endurance"      height="20" />
+    <control progid="DecalControls.PushButton"  name="Coordination"   height="20"  />
+    <control progid="DecalControls.PushButton"  name="Quickness"      height="20"  />
+    <control progid="DecalControls.PushButton"  name="Focus"          height="20"  />
+    <control progid="DecalControls.PushButton"  name="Willpower"      height="20"  />
+
+    <control progid="DecalControls.PushButton"  name="StamRegen"      height="20" />
+    <control progid="DecalControls.PushButton"  name="Run"            height="20" />
+
+    <control progid="DecalControls.PushButton"  name="Creature"       height="20" />
+    <control progid="DecalControls.PushButton"  name="Life"           height="20" />
+    <control progid="DecalControls.PushButton"  name="War"            height="20" />
+    <control progid="DecalControls.PushButton"  name="MagicD"         height="20" />
+    <control progid="DecalControls.PushButton"  name="HeavyW"         height="20" />
+    <control progid="DecalControls.PushButton"  name="MelD"           height="20" />
+    <control progid="DecalControls.PushButton"  name="MissW"          height="20" />
+    <control progid="DecalControls.PushButton"  name="MissD"          height="20" />
+
+    <control progid="DecalControls.PushButton"  name="Clear"          height="40" />
+
+    <control progid="DecalControls.Notebook" name="Tabs" >
+
+      <page label="PLAYERS" >
+        <control progid="DecalControls.FixedLayout" name="PlayerLayout" >
+          <control progid="DecalControls.List" name="PlayerList" >
+            <column progid="DecalControls.IconColumn" name="PlayerIcon"  fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="PlayerName"  fixedwidth="145"/>
+            <column progid="DecalControls.TextColumn" name="PlayerXY"    fixedwidth="80"/>
+            <column progid="DecalControls.TextColumn" name="PlayerDist"  fixedwidth="30"/>
+            <column progid="DecalControls.IconColumn" name="PlayerDel"   fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="PlayerID" />
+          </control>
+
+          <control progid="DecalControls.List" name="GuildList" >
+            <column progid="DecalControls.IconColumn" name="GuildIcon"  fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="GuildName"  fixedwidth="145"/>
+            <column progid="DecalControls.TextColumn" name="GuildXY"    fixedwidth="80"/>
+            <column progid="DecalControls.TextColumn" name="GuildDist"  fixedwidth="30"/>
+            <column progid="DecalControls.IconColumn" name="GuildDel"   fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="GuildID" />
+          </control>
+        </control>
+      </page>
+
+      <page label="TIMERS" >
+        <control progid="DecalControls.FixedLayout" name="DefinedLayout" >
+          <control progid="DecalControls.List" name="TimerList" >
+            <column progid="DecalControls.IconColumn" name="GuildIcon"  fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="GuildName"  fixedwidth="145"/>
+            <column progid="DecalControls.TextColumn" name="GuildXY"    fixedwidth="80"/>
+            <column progid="DecalControls.TextColumn" name="GuildDist"  fixedwidth="30"/>
+            <column progid="DecalControls.IconColumn" name="GuildDel"   fixedwidth="15" />
+            <column progid="DecalControls.TextColumn" name="GuildID" />
+          </control>
+
+        </control>
+      </page>
+
+      <page label="PORTALS">
+        <control progid="DecalControls.FixedLayout" name="PortalLayout">
+          <control progid="DecalControls.List" name="PortalList" >
+            <column progid="DecalControls.IconColumn" name="CorpseIcon"  fixedwidth="16" />
+            <column progid="DecalControls.TextColumn" name="CorpseName"  fixedwidth="125"/>
+            <column progid="DecalControls.TextColumn" name="CorpseXY" fixedwidth="80"/>
+            <column progid="DecalControls.TextColumn" name="CorpseDist" fixedwidth="30"/>
+            <column progid="DecalControls.IconColumn" name="CorpseDel" fixedwidth="16" />
+            <column progid="DecalControls.TextColumn" name="CorpseID" />
+          </control>
+        </control>
+      </page>
+
+      <page label="CORPSES">
+        <control progid="DecalControls.FixedLayout" name="CorpseLayout">
+          <control progid="DecalControls.List" name="CorpseList" >
+            <column progid="DecalControls.IconColumn" name="CorpseIcon"  fixedwidth="16" />
+            <column progid="DecalControls.TextColumn" name="CorpseName"  fixedwidth="125"/>
+            <column progid="DecalControls.TextColumn" name="CorpseXY" fixedwidth="80"/>
+            <column progid="DecalControls.TextColumn" name="CorpseDist" fixedwidth="30"/>
+            <column progid="DecalControls.IconColumn" name="CorpseDel" fixedwidth="16" />
+            <column progid="DecalControls.TextColumn" name="CorpseID" />
+          </control>
+        </control>
+      </page>
+
+
+      <page label="  Settings  ">
+
+        <control progid="DecalControls.Notebook" name="Tabs2" >
+
+          <page label=" Friends / Enemies ">
+            <control progid="DecalControls.FixedLayout" name="LogoutLayout" >
+
+              <control progid="DecalControls.List" name="FriendsList" >
+                <column progid="DecalControls.TextColumn" name="SettingItemName"  fixedwidth="125" />
+                <column progid="DecalControls.IconColumn" name="SettingDelete"    fixedwidth="15" />
+                <column progid="DecalControls.TextColumn" name="DefinedItemID" />
+              </control>
+
+              <control progid="DecalControls.List" name="EnemiesList" >
+                <column progid="DecalControls.TextColumn" name="SettingItemName"  fixedwidth="125" />
+                <column progid="DecalControls.IconColumn" name="SettingDelete"    fixedwidth="15" />
+                <column progid="DecalControls.TextColumn" name="DefinedItemID" />
+              </control>
+
+              <control progid="DecalControls.PushButton"  name="AddFriend"      height="20" text="Add" />
+              <control progid="DecalControls.PushButton"  name="AddEnemy"       height="20" text="Add" />
+              <control progid="DecalControls.Edit"        name="Friend"         height="20" text="Name" />
+              <control progid="DecalControls.Edit"        name="Enemy"          height="20"  text="Name"/>
+
+              <control progid="DecalControls.StaticText"  name="FriendsNote"      height="20" text="Friends List:"/>
+              <control progid="DecalControls.StaticText"  name="EnemiesNote"      height="20" text="Enemies List:"/>
+
+            </control>
+          </page>
+
+          <page label=" Alerts " >
+            <control progid="DecalControls.FixedLayout"   name="AlertLayout" >
+
+              <control progid="DecalControls.StaticText"  name="AudioNote"       height="20" text="Sound alerts:" />
+              <control progid="DecalControls.CheckBox"    name="AlertSPK"        height="20" text="PK Detect." />
+              <control progid="DecalControls.CheckBox"    name="AlertSS"         height="20" text="Spell Detect." />
+              <control progid="DecalControls.CheckBox"    name="AlertDT"         height="20" text="Death Detect." />
+              <control progid="DecalControls.CheckBox"    name="AlertPKT"        height="20" text="PK Timer." />
+              <control progid="DecalControls.CheckBox"    name="AlertOdds"       height="20" text="Hard Odds." />
+              <control progid="DecalControls.CheckBox"    name="AlertBc"         height="20" text="Broadcast." />
+              <control progid="DecalControls.StaticText"  name="TextNote"        height="20" text="Text alerts:" />
+              <control progid="DecalControls.CheckBox"    name="AlertPA"         height="20" text="/a on PK Detect." />
+              <control progid="DecalControls.CheckBox"    name="AlertPF"         height="20" text="/f on PK Detect." />
+              <control progid="DecalControls.CheckBox"    name="AlertLogP"       height="20" text="/a on Log on PK." />
+              <control progid="DecalControls.CheckBox"    name="AlertDA"         height="20" text="/a on Death." />
+              <control progid="DecalControls.CheckBox"    name="AlertLS"         height="20" text="/a Last seen." />
+
+              <control progid="DecalControls.PushButton"  name="SaveSettings2"   height="20" text="Save Settings" />
+              <control progid="DecalControls.PushButton"  name="ResetAlarms"     height="20" text="Default" />
+
+            </control>
+          </page>
+
+          <page label=" Adv. Options ">
+            <control progid="DecalControls.FixedLayout" name="SentryLayout" >
+              <control progid="DecalControls.StaticText"  name="ElementLbl"       height="20" text="Element: " />
+              <control progid="DecalControls.StaticText"  name="BehaviourLbl"     height="20" text="Behaviour: " />
+              <control progid="DecalControls.Choice"      name="Behaviour"        height="25" />
+              <control progid="DecalControls.Choice"      name="Element"          height="25" />
+              <control progid="DecalControls.Edit"        name="PkNumber"         height="20"  />
+              <control progid="DecalControls.StaticText"  name="PkNumberLbl"      height="20" text="Min. Enemies."/>
+              <control progid="DecalControls.Edit"        name="PkLevel"          height="20"  />
+              <control progid="DecalControls.StaticText"  name="PkLevelLbl"       height="20" text="Min. Enemy Lvl."/>
+
+              <control progid="DecalControls.StaticText"  name="RangeNote"        height="20" text="Enemy Range." />
+              <control progid="DecalControls.Edit"        name="Range"            height="20"  />
+              <control progid="DecalControls.StaticText"  name="TimerNote"        height="20" text="Relog Timer." />
+              <control progid="DecalControls.Edit"        name="Timer"            height="20"  />
+              <control progid="DecalControls.StaticText"  name="TapersNote"       height="20" text="Min. Tapers." />
+              <control progid="DecalControls.Edit"        name="Comps"            height="20"  />
+              <control progid="DecalControls.StaticText"  name="SlotsNote"        height="20" text="Min. Inventory." />
+              <control progid="DecalControls.Edit"        name="Slots"            height="20"  />
+
+              <control progid="DecalControls.CheckBox"    name="MacroLogic"       height="20" text="SmartMacro." />
+              <control progid="DecalControls.CheckBox"    name="LogDie"           height="20" text="Enable Die Button." />
+
+              <control progid="DecalControls.PushButton"  name="SaveSettings3"    height="20" text="Save Settings" />
+              <control progid="DecalControls.PushButton"  name="ResetOptions"     height="20" text="Default" />
+
+              <control progid="DecalControls.Edit"        name="Ticker"           height="20"  />
+              <control progid="DecalControls.StaticText"  name="TickerNote"       height="20" text="Ticker Rate (ms)."/>
+              <control progid="DecalControls.StaticText"  name="TickerNote2"       height="20" text="Lowering this will increase accuracy."/>
+
+            </control>
+          </page>
+
+          <page label=" Admin ">
+            <control progid="DecalControls.FixedLayout" name="AdminLayout" >
+
+              <control progid="DecalControls.StaticText"  name="AdminNote"        height="20" text="Admin-only commands:"/>
+              <control progid="DecalControls.StaticText"  name="ForcelogNote"     height="20" text="Target Name (Defiance User)."/>
+              <control progid="DecalControls.Edit"        name="ForcelogBox"      height="20"  text="Name"/>
+              <control progid="DecalControls.PushButton"  name="ForcelogButton"   height="40" text="Log" />
+              <control progid="DecalControls.PushButton"  name="ForceRelogButton" height="40" text="Relog" />
+              <control progid="DecalControls.PushButton"  name="ForcelocButton"   height="40" text="Post Loc" />
+              <control progid="DecalControls.PushButton"  name="ForcedieButton"   height="40" text="Smite" />
+
+            </control>
+          </page>
+
+        </control>
+      </page>
+
+    </control>
+  </control>
+</view>

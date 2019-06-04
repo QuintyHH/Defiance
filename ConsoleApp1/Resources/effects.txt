@@ -1,0 +1,197 @@
+EFFECT=56
+Category=Life
+DisplayName=Bludge Vuln or Imperil
+Shape=Circle
+ShapeColor=White
+Icon=100668293
+<DETAILS>
+-DEBUFF|Imperil||cruath quasith|White|100668293
+-DEBUFF|Bludge Vuln||cruath quareth|Grey|100668345
+<ENDDETAILS>
+ENDEFFECT
+
+EFFECT=50
+Category=Life
+DisplayName=Acid Vuln
+Shape=Circle
+ShapeColor=Green
+Icon=100668344
+ENDEFFECT
+
+EFFECT=25
+Category=Creature
+DisplayName=Run Debuff
+Shape=Circle
+ShapeColor=Green
+Icon=100668295
+ENDEFFECT
+
+EFFECT=52
+Category=Life
+DisplayName=Cold Vuln
+Shape=Circle
+ShapeColor=Blue
+Icon=100668292
+ENDEFFECT
+
+EFFECT=44
+Category=Life
+DisplayName=Fire Vuln
+Shape=Circle
+ShapeColor=Red
+Icon=100668291
+ENDEFFECT
+
+EFFECT=54
+Category=Life
+DisplayName=Light Vuln
+Shape=Circle
+ShapeColor=Purple
+Icon=100668346
+ENDEFFECT
+
+EFFECT=46
+Category=Life
+DisplayName=Piercing Vuln
+Shape=Circle
+ShapeColor=Yellow
+Icon=100668347
+ENDEFFECT
+
+EFFECT=48
+Category=Life
+DisplayName=Slashing Vuln
+Shape=Circle
+ShapeColor=Orange
+Icon=100668348
+ENDEFFECT
+
+EFFECT=23
+Category=Creature
+DisplayName=Defense Inepts
+Shape=Triangle
+ShapeColor=Yellow
+Icon=100668330
+<DETAILS>
+-DEBUFF|Magic Yield||equinopaj|Yellow|100668330
+-DEBUFF|Vulnerability (Melee)||equinozael|Orange|100668331
+-DEBUFF|Defenselessness (Missile)||equinofeth|Blue|100669126
+<ENDDETAILS>
+ENDEFFECT
+
+EFFECT=27
+Category=Creature
+DisplayName=Magic Skill Inepts
+Shape=Triangle
+ShapeColor=Purple
+Icon=100668337
+<DETAILS>
+-DEBUFF|Creature Magic Inept||equinealoi|Green|100668358
+-DEBUFF|Item Magic Inept||equineapaj|Green|100668272
+-DEBUFF|Life Magic Inept||equineavik|Red|100668337
+-DEBUFF|War Magic Inept||equineati|Purple|100668272
+-DEBUFF|Void Magic Inept||equineaves|Purple|100691575
+-DEBUFF|Summoning Inept||equineafeth|Red|100693007
+<ENDDETAILS>
+ENDEFFECT
+
+EFFECT=19
+Category=Creature
+DisplayName=Weapon Skill Inepts
+Shape=Square
+ShapeColor=Red
+Icon=100692226
+<DETAILS>
+-DEBUFF|Missile Weapon Inept||equinhatak|Orange|100668266
+-DEBUFF|Finesse Weapon Inept||equinluzael|Blue|100692225
+-DEBUFF|Light Weapon Inept||equinlutak|Green|100692224
+-DEBUFF|Heavy or Two Handed Weapon Inept||equinluril|Red|100692226
+<ENDDETAILS>
+ENDEFFECT
+
+EFFECT=21
+Category=Creature
+DisplayName=Secondary Skill Inepts
+Shape=Square
+ShapeColor=Purple
+Icon=100668265
+<DETAILS>
+-DEBUFF|Recklessness Inept||equinhati|Purple|100668265
+-DEBUFF|Sneak Attack Inept||equinluguz|Purple|100692230
+-DEBUFF|Shield Inept||equinhafeth|Yellow|100692229
+-DEBUFF|Dirty Fighting Inept||equinluvik|Yellow|100692227
+-DEBUFF|Dual Wield Inept||equinlureth|White|100692228
+<ENDDETAILS>
+ENDEFFECT
+
+EFFECT=7
+Category=Creature
+DisplayName=Strength Debuff
+Shape=Diamond
+ShapeColor=Red
+Icon=100668300
+ENDEFFECT
+
+EFFECT=11
+Category=Creature
+DisplayName=Endurance Debuff
+Shape=Diamond
+ShapeColor=Yellow
+Icon=100668273
+ENDEFFECT
+
+EFFECT=9
+Category=Creature
+DisplayName=Coordination Debuff
+Shape=Diamond
+ShapeColor=Orange
+Icon=100668268
+ENDEFFECT
+
+EFFECT=13
+Category=Creature
+DisplayName=Quickness Debuff
+Shape=Diamond
+ShapeColor=Green
+Icon=100668294
+ENDEFFECT
+
+EFFECT=17
+Category=Creature
+DisplayName=Focus Debuff
+Shape=Diamond
+ShapeColor=Blue
+Icon=100668277
+ENDEFFECT
+
+EFFECT=15
+Category=Creature
+DisplayName=Willpower Debuff
+Shape=Diamond
+ShapeColor=Purple
+Icon=100668296
+ENDEFFECT
+
+EFFECT=38
+Category=Life
+DisplayName=Health Regen Debuff
+Shape=Diamond
+ShapeColor=White
+Icon=100668279
+ENDEFFECT
+
+EFFECT=42
+Category=Life
+DisplayName=Stamina Regen Debuff
+Shape=Diamond
+ShapeColor=White
+Icon=100668299
+ENDEFFECT
+
+EFFECT=40
+Category=Life
+DisplayName=Mana Regen Debuff
+Shape=Diamond
+ShapeColor=White
+Icon=100668288
+ENDEFFECT

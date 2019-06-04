@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B06FC7A0-FD06-4C8E-A339-7BF9B1CA2063}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Defiance</RootNamespace>
+    <AssemblyName>Defiance2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Decal.Adapter">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\Decal.Adapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Decal.Interop.Core, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\.NET 2.0 PIA\Decal.Interop.Core.DLL</HintPath>
+    </Reference>
+    <Reference Include="Decal.Interop.D3DService, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\.NET 2.0 PIA\Decal.Interop.D3DService.DLL</HintPath>
+    </Reference>
+    <Reference Include="Decal.Interop.Filters, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Decal.Interop.Inject, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\.NET 2.0 PIA\Decal.Interop.Inject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="utank2-i">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\plugins\VirindiTank\utank2-i.dll</HintPath>
+    </Reference>
+    <Reference Include="VirindiViewService">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Decal 3.0\plugins\VirindiViewService\VirindiViewService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseHandle\Commands.cs" />
+    <Compile Include="BaseHandle\Report.cs" />
+    <Compile Include="BaseHandle\Sounds.cs" />
+    <Compile Include="BaseHandle\VersionControl.cs" />
+    <Compile Include="HUDHandle\Debuff.cs" />
+    <Compile Include="HUDHandle\DebuffCategories.cs" />
+    <Compile Include="HUDHandle\DebuffDB.cs" />
+    <Compile Include="HUDHandle\DebuffDisplayInfo.cs" />
+    <Compile Include="HUDHandle\DebuffEffect.cs" />
+    <Compile Include="HUDHandle\DebuffEffectDetails.cs" />
+    <Compile Include="HUDHandle\DebuffEventArgs.cs" />
+    <Compile Include="HUDHandle\DebuffInfo.cs" />
+    <Compile Include="HUDHandle\HUDControl.cs" />
+    <Compile Include="HUDHandle\Profile.cs" />
+    <Compile Include="HUDHandle\SpellWord.cs" />
+    <Compile Include="HUDHandle\Target.cs" />
+    <Compile Include="HUDHandle\TargetCache.cs" />
+    <Compile Include="HUDHandle\TargetD3D.cs" />
+    <Compile Include="HUDHandle\TargetTypes.cs" />
+    <Compile Include="HUDHandle\Utils.cs" />
+    <Compile Include="LogHandle\Components.cs" />
+    <Compile Include="LogHandle\Death.cs" />
+    <Compile Include="LogHandle\Detection.cs" />
+    <Compile Include="LogHandle\Inventory.cs" />
+    <Compile Include="LogHandle\LogMethod.cs" />
+    <Compile Include="LogHandle\Remote.cs" />
+    <Compile Include="MacroHandle\FailDetect.cs" />
+    <Compile Include="MacroHandle\RecallDetect.cs" />
+    <Compile Include="MacroHandle\MacroLogic.cs" />
+    <Compile Include="MacroHandle\Targetting.cs" />
+    <Compile Include="Scanner\AttackDetection.cs" />
+    <Compile Include="Utils\Lib.cs" />
+    <Compile Include="BaseHandle\Auth.cs" />
+    <Compile Include="BaseHandle\SettingsControl.cs" />
+    <Compile Include="Utils\Utility.cs" />
+    <Compile Include="Utils\Repo.cs" />
+    <Compile Include="BaseHandle\UI.cs" />
+    <Compile Include="CollectionHandle\Enemy.cs" />
+    <Compile Include="CollectionHandle\Friend.cs" />
+    <Compile Include="LogHandle\Vitae.cs" />
+    <Compile Include="DeathHandle\ParseDeath.cs" />
+    <Compile Include="DeathHandle\RedTimer.cs" />
+    <Compile Include="PluginCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scanner\Scanner.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="Views\ViewControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Decal">
+      <Guid>{FF7F5F6D-34E0-4B6F-B3BB-8141DE2EF732}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\icon.png" />
+    <EmbeddedResource Include="Views\MainView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\death.wav" />
+    <EmbeddedResource Include="Resources\effects.txt" />
+    <EmbeddedResource Include="Resources\overwhelmed.wav" />
+    <EmbeddedResource Include="Resources\pk.wav" />
+    <EmbeddedResource Include="Resources\pktimer1.wav" />
+    <EmbeddedResource Include="Resources\pktimer2.wav" />
+    <EmbeddedResource Include="Resources\spell.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
